@@ -28,6 +28,12 @@
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
 
+       <?php if ( get_header_image() ) : ?>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+        </a>
+        <?php endif; // End header image check. ?>
+
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle"><?php _e( 'Primary Menu', 'shinysimple' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
