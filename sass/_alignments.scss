@@ -1,18 +1,30 @@
 /*--------------------------------------------------------------
 7.0 Alignments
 --------------------------------------------------------------*/
+
 .alignleft {
-        display: inline;
-        float: left;
-        margin-right: 1.5em;
+	display: inline;
+	float: left;
+	margin: 0 1.5em 1em 0;
 }
+
 .alignright {
-        display: inline;
-        float: right;
-        margin-left: 1.5em;
+	display: inline;
+	float: right;
+	margin: 0 0 1em 1.5em;
 }
+
 .aligncenter {
-        clear: both;
-        display: block;
-        margin: 0 auto;
+	clear: both;
+	display: block;
+	margin: 0 auto 1.6em;
+}
+
+/* Alignment responsive */
+@media screen and (min-width: 1320px) {
+	.alignleft { margin-left: -160px; }
+}
+
+@media screen and (min-width: 1820px) {
+	.alignright { margin-right: -160px; }
 }

@@ -38,13 +38,13 @@ function shinysimple_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'shinysimple' ),
 	) );
-	
+
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
@@ -57,9 +57,7 @@ function shinysimple_setup() {
 	 * Enable support for Post Formats.
 	 * See http://codex.wordpress.org/Post_Formats
 	 */
-	add_theme_support( 'post-formats', array(
-		'aside', 'image', 'video', 'quote', 'link'
-	) );
+	add_theme_support( 'post-formats', array( 'aside' ) );
 
 	// Setup the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'shinysimple_custom_background_args', array(
@@ -93,6 +91,10 @@ add_action( 'widgets_init', 'shinysimple_widgets_init' );
  */
 function shinysimple_scripts() {
 	wp_enqueue_style( 'shinysimple-style', get_stylesheet_uri() );
+
+	wp_enqueue_style('shinysimple-google-fonts', 'http://fonts.googleapis.com/css?family=Lato:300,400,700,900,900italic|PT+Serif:400,700,400italic,700italic');
+
+	wp_enqueue_style('shinysimple-font-awesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
 
 	wp_enqueue_script( 'shinysimple-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

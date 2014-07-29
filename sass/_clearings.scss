@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------
 8.0 Clearings
 --------------------------------------------------------------*/
+
 .clear:before,
 .clear:after,
 .entry-content:before,
@@ -13,8 +14,8 @@
 .site-content:after,
 .site-footer:before,
 .site-footer:after {
-        content: '';
-        display: table;
+	content: '';
+	display: table;
 }
 
 .clear:after,
@@ -23,6 +24,5 @@
 .site-header:after,
 .site-content:after,
 .site-footer:after {
-        clear: both;
+	clear: both;
 }
-

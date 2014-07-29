@@ -1,14 +1,20 @@
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
+
 a {
-        color: royalblue;
-}
-a:visited {
-        color: purple;
-}
-a:hover,
-a:focus,
-a:active {
-        color: midnightblue;
+	@include single-transition(all, 0.5s);
+	color: #000;
+	text-decoration: none;
+	&:visited {
+	    color: #333;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+	    text-decoration: underline;
+	}
+	&:hover {
+	    color: #4c50aa;
+	}
 }
