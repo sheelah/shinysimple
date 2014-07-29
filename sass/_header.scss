@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 .site-branding {
-	background: #0587bf;
+	background: #638b9e;
 	padding: 6rem 0;
 	text-align: center;
 	@media screen and (max-width: 900px) {
@@ -35,6 +35,9 @@
 	line-height: normal;
 	text-transform: uppercase;
 	padding-bottom: 1rem;
+	a:visited {
+		color: #fff;
+	}
 }
 
 .site-description {

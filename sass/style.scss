@@ -22,6 +22,10 @@ along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normali
 and Blueprint http://www.blueprintcss.org/
 */
 
+// Import config stuff first
+@import "compass/css3";
+@import "variables";
+
 @import "accessibility";
 @import "alignments";
 @import "asides";
@@ -29,7 +33,6 @@ and Blueprint http://www.blueprintcss.org/
 @import "captions";
 @import "clearings";
 @import "comments";
-@import "compass/css3";
 @import "elements";
 @import "forms";
 @import "footer";
