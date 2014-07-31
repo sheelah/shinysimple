@@ -2,6 +2,11 @@
 Header
 --------------------------------------------------------------*/
 
+.header-image img {
+	display: block;
+	margin: 0 auto;
+}
+
 .site-branding {
 	background: #638b9e;
 	padding: 6rem 0;
@@ -12,7 +17,6 @@ Header
 }
 
 .title-box {
-	border: 1px solid #fff;
 	margin: 0 auto;
 	max-width: 75%;
 	padding: 4rem;
@@ -21,7 +25,6 @@ Header
 		max-width: 100%;
 		margin: 0 auto;
 		padding: 4rem;
-		border: none;
 	}
 	@media screen and (max-width: 399px) {
 		.title-box { padding: 2rem; }
@@ -50,7 +53,7 @@ Header
 
 .site-title a,
 .site-description {
-	color: #fff;
+	color: $header-font-color;
 }
 
 .header-image img {
@@ -62,7 +65,7 @@ Header
 	@include background-size(cover !important);
 	background: no-repeat center;
 	.title-box {
-		background: #333;
+		background: rgba(51, 51, 51, 0.5);
 	}
 }
 

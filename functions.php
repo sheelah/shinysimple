@@ -43,6 +43,7 @@ function shinysimple_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'shinysimple' ),
+		'social' => __( 'Social Menu', 'shinysimple'),
 	) );
 
 	/*
@@ -92,9 +93,14 @@ add_action( 'widgets_init', 'shinysimple_widgets_init' );
 function shinysimple_scripts() {
 	wp_enqueue_style( 'shinysimple-style', get_stylesheet_uri() );
 
-	wp_enqueue_style('shinysimple-google-fonts', 'http://fonts.googleapis.com/css?family=Lato:300,400,700,900,900italic|PT+Serif:400,700,400italic,700italic');
+	wp_enqueue_style('shinysimple-google-fonts', 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,900italic|PT+Serif:400,700,400italic,700italic');
 
 	wp_enqueue_style('shinysimple-font-awesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+	wp_enqueue_script( 'shinysimple-enquire', get_template_directory_uri() . '/js/enquire.min.js', false, '20140429', true );
+
+	wp_enqueue_script( 'shinysimple-superfish', get_template_directory_uri() . '/js/superfish.min.js', array('jquery'), '20140328', true );
+
+	wp_enqueue_script( 'shinysimple-superfish-settings', get_template_directory_uri() . '/js/superfish-settings.js', array('jquery'), '20140328', true );
 
 	wp_enqueue_script( 'shinysimple-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

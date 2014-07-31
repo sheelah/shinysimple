@@ -4,11 +4,19 @@ Variables
 
 /* Typography */
 $body-font-family: 'PT Serif', serif;
-$header-font-family: 'Lato', Arial, sans-serif;
+$heading-font-family: 'Lato', Arial, sans-serif;
+$nav-font-family: $heading-font-family;
 
 /* Colors */
 $body-font-color: #535151;
-$header-font-color: #3a3535;
-
+$heading-font-color: #3a3535;
+$header-font-color: #fff;
+$site-main-bg-color: #b2b2b2;
+$nav-bg-color: #504e4e;
+$nav-ul-bg-color: #4d4d4d;
+$nav-ul-hover-bg-color: #313131;
+$nav-li-hover-bg-color: #727070;
+$nav-li-hover-font-color: #fff;
+$nav-selected-hover-font-color: $nav-ul-hover-bg-color;
 
 

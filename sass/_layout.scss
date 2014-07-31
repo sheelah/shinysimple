@@ -4,25 +4,32 @@ Layout
 
 /* Layout: content-sidebar with fixed-width sidebar */
 
-.content-area {
-	float: left;
-	margin-left: -380px;
-	padding-left: 380px;
-	width: 100%;
-}
 .site-main {
-	background: #b2b2b2;
+	background: $site-main-bg-color;
+	padding-top: 1em;
 }
-.site-content .widget-area {
+
+.single .site-content,
+.page .site-content {
 	background: #fff;
-	float: right;
-	overflow: hidden;
-	padding: 4rem;
-	width: 380px;
 }
+
+.site-content .widget-area {
+	float: none;
+	width: auto;
+	max-width: 780px;
+    padding: 0 4rem;
+	@media screen and (min-width: 1160px) {
+		float: right;
+		width: 380px;
+		padding: 4rem;
+		background: #fff;
+	}
+}
+
 .site-footer {
-	clear: both;
 	width: 100%;
+	clear: both;
 }
 
 .entry-header,
@@ -38,4 +45,102 @@ Layout
 	max-width: 78rem;
 	padding: 0 4rem;
 	margin: 0 auto;
+}
+
+@media screen and (max-width: 399px) {
+	.entry-header,
+	.page-header,
+	.entry-content,
+	.entry-footer,
+	.tag-links,
+	.post-navigation,
+	.comments-area,
+	.paging-navigation {
+		padding: 0 2rem;
+	}
+}
+
+.page-header,
+.paging-navigation {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+	list-style-type: none;
+	background: #fff;
+}
+
+.page-header {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.index-box,
+.author-index {
+	max-width: 780px;
+	max-width: 78rem;
+	padding: 1em 0 2em;
+	margin: 0 auto 2em;
+	background: #fff;
+	background: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 1820px) and (min-width: 1440px) {
+	.front-index-thumbnail { margin-bottom: 0; }
+
+	.front-index-thumbnail .image-shifter { margin-bottom: -3.2em; }
+
+	.index-box { margin-top: 0; }
+}
+
+@media screen and (min-width: 1540px) {
+	.content-area {
+		float: left;
+		width: 100%;
+		margin-right: -380px;
+	}
+}
+
+@media screen and (min-width: 1160px) and (max-width: 1539px) {
+	.content-area {
+		float: left;
+		width: 100%;
+		margin-left: -380px;
+		padding-left: 380px;
+	}
+
+	.index-box,
+	.entry-header,
+	.page-header,
+	.entry-content,
+	.entry-footer,
+	.tag-links,
+	.post-navigation,
+	.comments-area,
+	.paging-navigation,
+	.author-index { margin-right: 0; }
+
+}
+
+.page-content,
+.entry-content,
+.entry-summary,
+.entry-header,
+.entry-footer,
+.navigation {
+	/*margin: 1.5em 0 0;*/
+}
+
+.image-shifter {
+	@media screen and (min-width: 1440px) and (max-width: 1819px) {
+		float: right;
+		width: 1060px;
+	}
+	@media screen and (min-width: 1540px) and (max-width: 1820px) {
+		margin-right: 380px;
+	}
+	@media screen and (min-width: 1820px) {
+		float: none;
+		width: 1060px;
+		margin: 0 auto;
+	}
 }

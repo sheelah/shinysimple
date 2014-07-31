@@ -16,11 +16,15 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: right;
-	color: $header-font-color;
+	color: $heading-font-color;
 	font-weight: 900;
-	font-family: $header-font-family;
+	font-family: $heading-font-family;
 	-ms-word-break: break-word;
 	word-break: break-word;
+}
+
+#reply-title {
+	color: $heading-font-color;
 }
 
 p {

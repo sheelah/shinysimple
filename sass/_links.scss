@@ -18,3 +18,11 @@ a {
 	    color: #4c50aa;
 	}
 }
+
+.site-title {
+	a:focus,
+	a:hover,
+	a:active {
+		text-decoration: none;
+	}
+}

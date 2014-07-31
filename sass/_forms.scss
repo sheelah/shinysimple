@@ -16,6 +16,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+	@include single-transition(all, 0.5s);
 	padding: 1em;
 	font-size: 16px;
 	font-size: 1.6rem;
