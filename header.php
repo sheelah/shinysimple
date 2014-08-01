@@ -46,8 +46,17 @@
 			<h1 class="menu-toggle"><?php _e( 'Menu', 'shinysimple' ); ?></h1>
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'shinysimple' ); ?></a>
 			<?php wp_nav_menu( array( 'menu_class' => 'nav-menu', 'theme_location' => 'primary' ) ); ?>
+			<div class="search-toggle">
+				<i class="fa fa-search"></i>
+				<a href="search-container" class="screen-reader-text"><?php _e( 'Search', 'shinysimple'); ?></a>
+			</div>
 			<?php shinysimple_social_menu(); ?>
 		</nav><!-- #site-navigation -->
+		<div id="search-container" class="search-box-wrapper clear">
+			<div class="search-box clear">
+				<?php get_search_form(); ?>
+			</div>
+		</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

@@ -109,9 +109,6 @@ Menus
 }
 
 @media screen and (max-width: 600px) {
-	main-navigation.toggled .menu-toggle {
-		background: red;
-	}
 	.menu-toggle {
 		display: block;
 		height: 3.9em;
@@ -222,7 +219,6 @@ Menus
 	font-size: 20px;
 	color: #fff;
 	-webkit-font-smoothing: antialiased;
-	content: '\f08e';
 }
 
 .menu-social li a[href*="dribbble.com"]::before { content: '\f17d'; }
@@ -253,12 +249,12 @@ Menus
 	#menu-social ul {
 		position: absolute;
 		top: 0;
-		right: 1rem;
+		right: 6rem;
 		display: block;
 	}
 
 	#menu-social li a {
-		padding-left:.5em;
+		padding-left: .5em;
 		padding-right: .5em;
 	}
 }

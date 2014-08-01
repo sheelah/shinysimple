@@ -73,6 +73,7 @@ Header
 /* Header search */
 
 .search-toggle {
+	@include single-transition(all, 0.5s);
 	color: #fff;
 	cursor: pointer;
 	float: right;
@@ -82,6 +83,7 @@ Header
 	text-align: center;
 	width: 54px;
 	@media screen and (max-width: 600px) {
+		height: 100%;
 		margin-right: 0;
 		position: absolute;
 		right: 0;
@@ -89,7 +91,7 @@ Header
 	}
 	&:hover,
 	&.active {
-		background: #4d4d4d;
+		background: $nav-icon-hover-bg-color;
 	}
 	.screen-reader-text {
 		right: 0;
@@ -98,25 +100,28 @@ Header
 }
 
 .search-box-wrapper {
+	display: none;
 	width: 100%;
 	z-index: 2;
 }
 .search-box {
-	background: #4d4d4d;
+	background: $nav-search-bg-color;
 	padding: 1em;
 	.search-field {
 		background-color: #fff;
 		border: 0;
+		box-sizing: border-box;
 		float: right;
 		font-size: 20px;
 		font-size: 2rem;
 		max-width: 362px;
-		padding: 1rem 2rem 1rem 4rem;
+		padding: 1rem;
 	}
 }
 
 .hide { display: none; }
 
+/* Hide submit button everywhere */
 .error404 .search-submit,
 .search .search-submit,
 .search-box .search-submit { display: none; }
