@@ -3,13 +3,14 @@ Footer
 --------------------------------------------------------------*/
 
 .site-footer {
-	background: #313131;
+	background: $footer-bg-color;
 	color: #fff;
-	font-family: 'Lato', Arial, sans-serif;
+	font-family: $heading-font-family;
 	font-size: 16px;
 	font-size: 1.6rem;
 	padding: 2em;
-	a {
+	aside a,
+	.site-info a {
 		color: #fff;
 	}
 }

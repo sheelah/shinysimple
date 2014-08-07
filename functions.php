@@ -84,6 +84,16 @@ function shinysimple_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Footer Widgets', 'shinysimple' ),
+		'id'            => 'sidebar-2',
+		'description'   => __( 'Footer widgets area appearing in the site footer.', 'shinysimple' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
 }
 add_action( 'widgets_init', 'shinysimple_widgets_init' );
 
@@ -106,6 +116,8 @@ function shinysimple_scripts() {
 	wp_enqueue_script( 'shinysimple-hide-search', get_template_directory_uri() . '/js/hide-search.js', array('jquery'), '20120206', true );
 
 	wp_enqueue_script( 'shinysimple-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+
+	wp_enqueue_script( 'shinysimple-masonry', get_template_directory_uri() . '/js/masonry-settings.js', array('masonry'), '20140401', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
