@@ -3,7 +3,7 @@ Links
 --------------------------------------------------------------*/
 
 a {
-	@include single-transition(all, 0.5s);
+	@include single-transition(color, 0.5s);
 	color: #000;
 	text-decoration: none;
 	&:visited {

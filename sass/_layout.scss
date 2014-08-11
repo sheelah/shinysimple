@@ -4,14 +4,14 @@ Layout
 
 /* Layout: content-sidebar with fixed-width sidebar */
 
-.site-main {
+.site-content {
 	background: $site-main-bg-color;
-	padding-top: 1em;
+	padding-bottom: 4em;
 }
 
 .single .site-content,
 .page .site-content {
-	background: #fff;
+	background: $post-bg-color;
 }
 
 .site-content .widget-area {

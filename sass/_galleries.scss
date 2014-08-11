@@ -6,43 +6,60 @@ Galleries
 	margin-bottom: 1.5em;
 }
 
-.gallery-item {
-	display: inline-block;
-	text-align: center;
-	vertical-align: top;
-	width: 100%;
+.gallery-caption {
+	background: $caption-bg-color;
+	font-family: $caption-font-family;
+	font-size: 14px;
+	font-size: 1.4rem;
+	padding: 0.8075em 1em;
 }
 
-.gallery-columns-2 .gallery-item {
-	max-width: 50%;
+.site-main .gallery { margin-bottom: 1.5em; }
+
+.gallery-caption {
+	background-color: #fff;
+    font-size: 12px;
+    line-height: 1.5;
+	@media screen and (min-width: 790px) {
+		@include single-transition(opacity, 0.5s);
+    	background-color: rgba(0,0,0,0.6);
+    	bottom: 0;
+    	color: #fff;
+	    left: 0;
+		margin: 0;
+		max-height: 50%;
+		padding: 6px 8px;
+		position: absolute;
+		text-align: left;
+		opacity: 0;  /* Hidden by default */
+		width: 100%;
+	}
 }
 
-.gallery-columns-3 .gallery-item {
-	max-width: 33.33%;
+.gallery-item:hover .gallery-caption,
+.gallery-item:focus .gallery-caption {
+	opacity: 1;
 }
 
-.gallery-columns-4 .gallery-item {
-	max-width: 25%;
+.site-main .gallery a img {
+	border: none;
+	display: block;
+	height: auto;
+	margin: 0 auto;
+	max-width: 100%;
 }
 
-.gallery-columns-5 .gallery-item {
-	max-width: 20%;
+.site-main .gallery-item {
+	max-width: 100%;
+	margin-bottom: 3rem;
+	overflow: hidden;
+	position: relative;
+	@media screen and (min-width: 790px) {
+		background: #333;
+		float: left;
+		margin-right: 3.333333333%;
+	}
 }
 
-.gallery-columns-6 .gallery-item {
-	max-width: 16.66%;
-}
-
-.gallery-columns-7 .gallery-item {
-	max-width: 14.28%;
-}
-
-.gallery-columns-8 .gallery-item {
-	max-width: 12.5%;
-}
-
-.gallery-columns-9 .gallery-item {
-	max-width: 11.11%;
-}
-
-.gallery-caption {}
+.site-main .gallery dd,
+.site-main .gallery figcaption { margin: 0; }

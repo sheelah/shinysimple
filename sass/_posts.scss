@@ -83,7 +83,7 @@ Posts and pages
 }
 .entry-content blockquote p {
 	font-size: 28px;
-    	font-size: 2.8rem;
+    font-size: 2.8rem;
 	line-height: 1.5em;
 }
 
@@ -96,7 +96,7 @@ blockquote cite {
 @media screen and (max-width: 680px) {
 	.entry-title {
 		font-size: 32px;
-	        font-size: 3.2rem;
+	    font-size: 3.2rem;
 		line-height: 1.3em;
 		h1 {
 			font-size: 28px;
@@ -142,11 +142,11 @@ blockquote cite {
 
 /* Blockquotes */
 blockquote {
-	padding: 1em 1.5em 0;
-	margin-bottom: 1em;
-	font-style: italic;
 	border-top: 1px solid #d4d0d0;
 	border-bottom: 1px solid #d4d0d0;
+	font-style: italic;
+	margin-bottom: 1em;
+	padding: 1em 1.5em 0;
 	&.alignleft {
 		float: left;
 		width: 50%;
@@ -164,7 +164,7 @@ blockquote {
 	}
 	cite {
 		display: block;
-		font-family: 'Lato', sans-serif;
+		font-family: $heading-font-family;
 		font-style: normal;
 		line-height: 1.5em;
 		margin-top: 1em;
@@ -193,7 +193,7 @@ blockquote.alignright {
 	@media screen and (max-width: 780px) {
 		width: 40%;
 	}
-	@media screen and (max-width:600px) {
+	@media screen and (max-width:650px) {
 		padding: 1em 1.5em 0;
 		width: 100%;
 	}
@@ -215,7 +215,7 @@ blockquote.alignright {
 
 /* Meta */
 .category-list {
-	font-family: 'Lato', sans-serif;
+	font-family: $heading-font-family;
 	font-size: 16px;
 	font-size: 1.6rem;
 	margin: 1.3em 0 1em;
@@ -229,9 +229,9 @@ blockquote.alignright {
 }
 
 .entry-meta {
-        margin-bottom: 2rem;
+	margin-bottom: 2rem;
 	padding: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: $heading-font-family;
 	font-size: 14px;
 	font-size: 1.4rem;
 	a {
@@ -253,6 +253,9 @@ blockquote.alignright {
 		text-align: right;
 		width: 120px;
 	}
+	.entry-header {
+		position: relative;
+	}
 	.single .byline,
 	.single .posted-on,
 	.single .comments-link {
@@ -267,7 +270,7 @@ blockquote.alignright {
 }
 
 .entry-footer {
-    font-family: 'Lato', sans-serif;
+	font-family: $heading-font-family;
     margin-bottom: 5rem;
     margin-top: 3rem;
 	ul {
@@ -275,12 +278,11 @@ blockquote.alignright {
 		font-size: 1.6rem;
 		line-height: 2em;
 		list-style-type: none;
-		margin: 0;
+		margin: 0 0 2rem 0;
 		padding: 0;
 	}
 	li {
-		display: inline-block;
-		margin-right: 4rem;
+		display: block;
 	}
 	i {
 		margin-right: .5rem;
