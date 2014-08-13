@@ -110,9 +110,9 @@ textarea {
 .comment-awaiting-moderation {
 	padding: 0.5rem 1em;
 	margin: 1rem 0;
-	font-family: 'Lato', Arial, sans-serif;
+	font-family: $comment-heading-font-family;
 	font-size: 16px;
 	font-size: 1.6rem;
 	color: #fff;
-	background: #d1e9c6;
+	background: $comment-awaiting-moderation-bg-color;
 }

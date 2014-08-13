@@ -5,6 +5,8 @@ Variables
 /* Typography */
 $body-font-family: 'PT Serif', serif;
 $caption-font-family: 'Lato', Arial, sans-serif;
+$comment-heading-font-family: 'Lato', Arial, sans-serif;
+$comment-textarea-font-family: 'PT Serif', serif;
 $footer-font-family: 'Lato', Arial, sans-serif;
 $heading-font-family: 'Lato', Arial, sans-serif;
 $nav-font-family: $heading-font-family;
@@ -13,6 +15,8 @@ $widget-font-family: $heading-font-family;
 /* Colors */
 $body-font-color: #535151;
 $caption-bg-color: #e5e5e5;
+$comment-by-author-bg-color: #f0f0f0;
+$comment-awaiting-moderation-bg-color: #9eca89;
 $footer-bg-color: #313131;
 $footer-font-color: #fff;
 $header-font-color: #fff;

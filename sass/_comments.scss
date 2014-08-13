@@ -24,7 +24,7 @@ ol.children { list-style-type: none; }
 		width: 50px;
 	}
 	.fn {
-		font-family: 'Lato', sans-serif;
+		font-family: $comment-heading-font-family;
 		font-size: 20px;
 		font-size: 2rem;
 		font-weight: 900;
@@ -38,10 +38,19 @@ ol.children { list-style-type: none; }
 
 .comment-meta { margin-bottom: 1em; }
 
-.comment-content { font-size: 90%; }
+.comment-content {
+	font-size: 90%;
+	a {
+		word-wrap: break-word;
+	}
+	ol {
+		margin-left: 1.5em;
+	}
+}
 
 .comment-content,
-.reply { margin-left: 70px; }
+.reply {
+	margin-left: 70px; }
 
 .comment-body {
 	border-bottom: 1px solid #d4d0d0;
@@ -51,21 +60,15 @@ ol.children { list-style-type: none; }
 
 .comment-list ol { margin-left: 50px; }
 
-.comment-content a { word-wrap: break-word; }
-
 .reply {
-	font-family: 'Lato', sans-serif;
+	font-family: $comment-heading-font-family;
 	font-size: 14px;
 	font-size: 1.4rem;
 	font-weight: 600;
 }
 
-.comment-content a { word-wrap: break-word; }
-
-.comment-content ol { margin-left: 1.5em; }
-
 .bypostauthor > .comment-body {
-	background: #eeecec;
+	background: $comment-by-author-bg-color;
 	border: none;
 	margin-bottom: 2em;
 	padding: 1em;
@@ -95,17 +98,18 @@ ol.children { list-style-type: none; }
 }
 
 .comment-form {
-	font-family: 'Lato', sans-serif;
+	font-family: $comment-heading-font-family;
 	font-size: 16px;
 	font-size: 1.6rem;
 	padding-bottom: 4rem;
 	textarea {
-		font-family: 'PT Serif', serif;
+		font-family: $comment-textarea-font-family;
 		font-size: 18px;
 		font-size: 1.8rem;
 	}
+	label {
+		display: block;
+	}
 }
-
-.comment-form label { display: block; }
 
 .required { color: red; }
