@@ -14,7 +14,7 @@
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$category_list = get_the_category_list(__(', ', 'simone'));
+		$category_list = get_the_category_list(__(', ', 'shinysimple'));
 
 		?>
 
