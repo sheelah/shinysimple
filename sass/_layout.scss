@@ -5,7 +5,7 @@ Layout
 /* Layout: content-sidebar with fixed-width sidebar */
 
 .site-content {
-	background: $site-main-bg-color;
+	background: $site-main-bg-color url(svg/pattern.svg) repeat;
 	padding-bottom: 4em;
 }
 
@@ -81,7 +81,6 @@ Layout
 	padding: 1em 0 2em;
 	margin: 0 auto 2em;
 	background: #fff;
-	background: hsl(0, 0%, 100%);
 }
 
 @media screen and (max-width: 1820px) and (min-width: 1440px) {
@@ -117,7 +116,9 @@ Layout
 	.post-navigation,
 	.comments-area,
 	.paging-navigation,
-	.author-index { margin-right: 0; }
+	.author-index {
+		margin-right: 0;
+	}
 
 }
 
@@ -128,19 +129,4 @@ Layout
 .entry-footer,
 .navigation {
 	/*margin: 1.5em 0 0;*/
-}
-
-.image-shifter {
-	@media screen and (min-width: 1440px) and (max-width: 1819px) {
-		float: right;
-		width: 1060px;
-	}
-	@media screen and (min-width: 1540px) and (max-width: 1820px) {
-		margin-right: 380px;
-	}
-	@media screen and (min-width: 1820px) {
-		float: none;
-		width: 1060px;
-		margin: 0 auto;
-	}
 }

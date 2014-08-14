@@ -41,7 +41,9 @@ object {
 
 
 /* Image Thumbnails */
-.single-post-thumbnail { background: #b2b2b2 url(images/pattern.svg) repeat; }
+.single-post-thumbnail {
+	background: $site-main-bg-color url(svg/pattern.svg) repeat;
+}
 
 .front-index-thumbnail {
 	margin-bottom: -3.2em;
@@ -61,4 +63,21 @@ object {
     margin-top: -8em;
 }
 
-.small-index-thumbnail { margin-top: -1em; }
+.small-index-thumbnail {
+	margin: -1em 0 1em 0;
+}
+
+.image-shifter {
+	@media screen and (min-width: 1440px) and (max-width: 1819px) {
+		float: right;
+		width: 1060px;
+	}
+	@media screen and (min-width: 1540px) and (max-width: 1820px) {
+		margin-right: 380px;
+	}
+	@media screen and (min-width: 1820px) {
+		float: none;
+		width: 1060px;
+		margin: 0 auto;
+	}
+}

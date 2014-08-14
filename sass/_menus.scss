@@ -139,8 +139,8 @@ Menus
 	}
 
 	.main-navigation ul {
-	display: none;
-	padding-left: 0;
+		display: none;
+		padding-left: 0;
 	}
 
 	.main-navigation li {
@@ -321,9 +321,14 @@ Menus
 	.post-navigation .nav-next { margin-top: 4rem; }
 }
 
-.paging-navigation ul { margin: 0; }
-
-.paging-navigation li { display: inline; }
+.paging-navigation {
+	ul {
+		margin: 0;
+	}
+	li {
+		display: inline;
+	}
+}
 
 a.page-numbers,
 span.page-numbers {
