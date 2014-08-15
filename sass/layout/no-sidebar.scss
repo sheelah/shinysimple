@@ -1,0 +1,88 @@
+/* Layout: content with no sidebar */
+
+.site-content {
+    background: #b2b2b2 url(../images/pattern.svg) repeat;
+    padding-bottom: 4em;
+}
+
+.single .site-content,
+.page .site-content {
+    background: #fff;
+}
+
+.site-footer {
+    clear: both;
+    width: 100%;
+}
+
+.entry-header,
+.page-header,
+.entry-content,
+.entry-footer,
+.tag-links,
+.post-navigation,
+.comments-area,
+.paging-navigation,
+.site-content .widget-area {
+    margin: 0 auto;
+    max-width: 780px;
+    max-width: 78rem;
+    padding: 0 4rem;
+    position: relative;
+}
+
+
+@media screen and (max-width: 399px) {
+    .entry-header,
+    .page-header,
+    .entry-content,
+    .entry-footer,
+    .tag-links,
+    .post-navigation,
+    .comments-area,
+    .paging-navigation {
+		padding: 0 2rem;
+	}
+}
+
+.page-header,
+.paging-navigation {
+    background: #fff;
+    list-style-type: none;
+    margin-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.page-header {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.index-box,
+.author-index {
+    background: #fff;
+    margin: 0 auto 2em;
+    max-width: 780px;
+    max-width: 78rem;
+    padding: 1em 0 2em;
+}
+
+.image-shifter {
+	/* Override floating for no-sidebar layout to center featured image */
+	@media screen and (min-width: 1440px) and (max-width: 1819px) {
+		float: none;
+		margin: 0 auto;
+		width: 1060px;
+	}
+	@media screen and (min-width: 1540px) and (max-width: 1820px) {
+		float: none;
+		margin: 0 auto;
+		width: 1060px;
+	}
+	@media screen and (min-width: 1820px) {
+		float: none;
+		margin: 0 auto;
+		width: 1060px;
+	}
+}

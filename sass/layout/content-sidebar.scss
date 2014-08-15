@@ -1,11 +1,9 @@
-/*--------------------------------------------------------------
-Layout
---------------------------------------------------------------*/
-
 /* Layout: content-sidebar with fixed-width sidebar */
 
+@import "../variables";
+
 .site-content {
-	background: $site-main-bg-color url(svg/pattern.svg) repeat;
+	background: $site-main-bg-color url(../svg/pattern.svg) repeat;
 	padding-bottom: 4em;
 }
 

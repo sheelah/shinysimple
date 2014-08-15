@@ -22,7 +22,7 @@ along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normali
 and Blueprint http://www.blueprintcss.org/
 */
 
-// Import config and reset stuff first
+/* Import config and reset stuff first */
 @import "compass/css3";
 @import "variables";
 @import "reset";
@@ -41,7 +41,6 @@ and Blueprint http://www.blueprintcss.org/
 @import "images";
 @import "index-archive";
 @import "infinite-scroll";
-@import "layout";
 @import "links";
 @import "media";
 @import "menus";

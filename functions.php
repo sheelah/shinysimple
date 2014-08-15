@@ -105,6 +105,12 @@ add_action( 'widgets_init', 'shinysimple_widgets_init' );
 function shinysimple_scripts() {
 	wp_enqueue_style( 'shinysimple-style', get_stylesheet_uri() );
 
+	if (is_page_template('page-templates/page-nosidebar.php') || !is_active_sidebar('sidebar-1')) {
+		wp_enqueue_style('shinysimple-layout-style', get_template_directory_uri() . '/layout/no-sidebar.css');
+	} else {
+		wp_enqueue_style( 'shinysimple-layout-style' , get_template_directory_uri() . '/layout/content-sidebar.css');
+	}
+
 	wp_enqueue_style('shinysimple-google-fonts', 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,900italic|PT+Serif:400,700,400italic,700italic');
 
 	wp_enqueue_style('shinysimple-font-awesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
