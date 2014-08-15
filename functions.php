@@ -33,6 +33,14 @@ function shinysimple_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
+	 // This theme styles the visual editor to resemble the theme style.
+	$font_base_url = '//fonts.googleapis.com/css';
+	$font_query = '?family=Lato:300,400,400italic,700,900,900italic'
+			. '|PT+Serif:400,700,400italic,700italic';
+	$font_url = $font_base_url . $font_query;
+	add_editor_style( array( 'inc/editor-style.css', str_replace( ',', '%2C', $font_url ) ) );
+
+
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *
@@ -111,7 +119,10 @@ function shinysimple_scripts() {
 		wp_enqueue_style( 'shinysimple-layout-style' , get_template_directory_uri() . '/layout/content-sidebar.css');
 	}
 
-	wp_enqueue_style('shinysimple-google-fonts', 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,900italic|PT+Serif:400,700,400italic,700italic');
+	$font_base_url = '//fonts.googleapis.com/css';
+	$font_query = '?family=Lato:100,300,400,700,900,900italic'
+			. '|PT+Serif:400,700,400italic,700italic';
+	wp_enqueue_style('shinysimple-google-fonts', $font_base_url . $font_query);
 
 	wp_enqueue_style('shinysimple-font-awesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
 	wp_enqueue_script( 'shinysimple-enquire', get_template_directory_uri() . '/js/enquire.min.js', false, '20140429', true );
