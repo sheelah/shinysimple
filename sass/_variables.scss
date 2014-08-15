@@ -4,6 +4,7 @@ Variables
 
 /* Typography */
 $body-font-family: 'PT Serif', serif;
+$button-font-family: 'Lato', Arial, sans-serif;
 $caption-font-family: 'Lato', Arial, sans-serif;
 $comment-heading-font-family: 'Lato', Arial, sans-serif;
 $comment-textarea-font-family: 'PT Serif', serif;
@@ -19,7 +20,7 @@ $comment-by-author-bg-color: #f0f0f0;
 $comment-awaiting-moderation-bg-color: #9eca89;
 $footer-bg-color: #313131;
 $footer-font-color: #fff;
-$header-font-color: #fff;
+$header-font-color: $footer-font-color;
 $heading-font-color: #3a3535;
 $nav-bg-color: #504e4e;
 $nav-icon-hover-bg-color: #727070;
@@ -29,7 +30,7 @@ $nav-search-bg-color:  #727070;
 $nav-selected-hover-font-color: #313131;
 $nav-ul-bg-color: #4d4d4d;
 $nav-ul-hover-bg-color: #313131;
-$site-main-bg-color: #b2b2b2;
 $post-bg-color: #fff;
+$site-main-bg-color: #b2b2b2;
 
 

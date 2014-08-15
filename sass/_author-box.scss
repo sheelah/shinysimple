@@ -51,7 +51,7 @@ Author Box
 
 .author-meta {
 	border-bottom: 16px solid #eee8aa;
-	font-family: 'Lato', sans-serif;
+	font-family: $heading-font-family;
 	margin-bottom: 2rem;
 }
 
@@ -76,7 +76,7 @@ Author Box
 
 a.author-link {
 	color: #000;
-	font-family: 'Lato', sans-serif;
+	font-family: $heading-font-family;
 	font-weight: 900;
 }
 
