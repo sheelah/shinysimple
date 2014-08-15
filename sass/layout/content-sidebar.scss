@@ -1,4 +1,9 @@
-/* Layout: content-sidebar with fixed-width sidebar */
+/*!
+Theme Name: Shinysimple
+Layout: Sidebar right
+*/
+
+/* Content-sidebar with fixed-width sidebar */
 
 @import "../variables";
 
@@ -117,14 +122,4 @@
 	.author-index {
 		margin-right: 0;
 	}
-
-}
-
-.page-content,
-.entry-content,
-.entry-summary,
-.entry-header,
-.entry-footer,
-.navigation {
-	/*margin: 1.5em 0 0;*/
 }

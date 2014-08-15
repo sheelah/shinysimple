@@ -1,0 +1,218 @@
+/*!
+Theme Name: Simone
+Description: Used to style the GUI content editor in posts and pages.
+*/
+
+@import "../variables";
+
+
+/* =Body
+----------------------------------------------- */
+html .mceContentBody {
+	max-width: 700px;
+}
+
+body {
+	color: #404040;
+	font-family: $body-font-family;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+/* =Base elements
+----------------------------------------------- */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+	color: #000;
+	a:visited {
+		color: #333;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: right;
+	font-family: $heading-font-family;
+	font-weight: 900;
+	color: #000;
+	margin-bottom: .4em;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 26px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 22px;
+}
+
+p,
+ul,
+ol {
+    font-size: 20px;
+    line-height: 1.6em;
+}
+
+/* =Blockquotes
+----------------------------------------------- */
+blockquote {
+	border-top: solid 1px #d4d0d0;
+	border-bottom: solid 1px #d4d0d0;
+	font-style: italic;
+	margin-bottom: 1em;
+	padding: 1em 1.5em 0;
+	p {
+		font-size: 28px;
+		line-height: 1.5em;
+	}
+	&.alignleft {
+		float: left;
+		margin-right: 1.5em;
+		padding: 1em 0 0;
+		width: 50%;
+	}
+	&.alignright {
+    	float: right;
+    	margin-left: 1.5em;
+    	padding: 1em 0 0;
+    	width: 50%;
+	}
+	em {
+		font-style: normal;
+	}
+	cite {
+    	display: block;
+    	font-family: $heading-font-family;
+    	font-size: 1.8rem;
+    	font-size: 18px;
+    	line-height: 1.5em;
+    	margin-left: 40%;
+    	margin-top: 1em;
+    	text-align: right;
+	}
+	&.alignleft cite {
+    	margin-left: 0;
+    	margin-right: 40%;
+    	text-align: left;
+	}
+}
+
+
+/* =Images
+ ----------------------------------------------- */
+
+.wp-caption {
+	background-color: #fff;
+	border: none;
+	margin: 10px 0;
+	margin-bottom: 1.5em;
+	max-width: 100%;
+	padding-top: 0;
+	text-align: center;
+	img[class*="wp-image-"] {
+		display: block;
+		margin: 0 auto;
+	}
+}
+.wp-caption-text {
+	text-align: center;
+}
+
+.gallery-caption,
+.wp-caption .wp-caption-text,
+.wp-caption-dd {
+	background: $caption-bg-color;
+	border-left: #fff solid 5px;
+	border-right: #fff solid 5px;
+	font-family: $caption-font-family;
+	font-size: 14px;
+	padding: 0.8075em 1em;
+}
+
+/* Due to HTML5 galleries being activated by default, gallery styling does not
+ * apply.
+*/
+.gallery {
+	margin: auto 0;
+	padding: 6px;
+	width: 712px;
+	img {
+		display: block;
+	}
+	a img {
+		border: none;
+		display: block;
+		height: auto;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+}
+
+.gallery-item {
+	background: #333;
+	float: left;
+	margin-bottom: 30px !important;
+	margin-right: 3.333333333% !important;
+	overflow: hidden;
+	padding: 0 !important;
+	position: relative;
+	width: auto !important;
+	&:hover .gallery-caption {
+		opacity: 1;
+	}
+}
+
+.gallery-caption {
+	background-color: $caption-bg-color;
+	border: none;
+	bottom: 0;
+	color: #fff;
+	font-size: 12px;
+	left: 0;
+	line-height: 1.5;
+	margin: 0 !important;
+	max-height: 50%;
+	opacity: 0;
+	padding: 6px 8px;
+	position: absolute;
+	text-align: left;
+	width: 100%;
+}
+
+/* =Alignment
+----------------------------------------------- */
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: right;
+	display: block;
+	margin: 0 auto;
+}
