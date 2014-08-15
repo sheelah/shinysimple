@@ -25,6 +25,7 @@ and Blueprint http://www.blueprintcss.org/
 /* Import config and reset stuff first */
 @import "compass/css3";
 @import "variables";
+@import "mixins";
 @import "reset";
 
 @import "accessibility";
