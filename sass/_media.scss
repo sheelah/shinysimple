@@ -34,8 +34,7 @@ object {
 .wp-caption .wp-caption-text {
 	background: $caption-bg-color;
 	font-family: $caption-font-family;
-	font-size: 14px;
-	font-size: 1.4rem;
+	@include font-size(1.4);
 	padding: 0.8075em 1em;
 }
 

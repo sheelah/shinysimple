@@ -18,8 +18,7 @@ input[type="reset"],
 input[type="submit"] {
 	@include single-transition(all, 0.5s);
 	padding: 1em;
-	font-size: 16px;
-	font-size: 1.6rem;
+	@include font-size(1.6);
 	font-family: $button-font-family;
 	text-transform: uppercase;
 	line-height: 1;
@@ -111,8 +110,7 @@ textarea {
 	padding: 0.5rem 1em;
 	margin: 1rem 0;
 	font-family: $comment-heading-font-family;
-	font-size: 16px;
-	font-size: 1.6rem;
+	@include font-size(1.6);
 	color: #fff;
 	background: $comment-awaiting-moderation-bg-color;
 }

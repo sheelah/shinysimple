@@ -3,8 +3,7 @@ Comments
 --------------------------------------------------------------*/
 
 .comments-title {
-	font-size: 36px;
-	font-size: 3.6rem;
+	@include font-size(3.6);
 	font-weight: 900;
 }
 
@@ -25,15 +24,13 @@ ol.children { list-style-type: none; }
 	}
 	.fn {
 		font-family: $comment-heading-font-family;
-		font-size: 20px;
-		font-size: 2rem;
+		@include font-size(2);
 		font-weight: 900;
 	}
 }
 
 .comment-metadata {
-	font-size: 14px;
-	font-size:1.4rem;
+	@include font-size(1.4);
 }
 
 .comment-meta { margin-bottom: 1em; }
@@ -62,8 +59,7 @@ ol.children { list-style-type: none; }
 
 .reply {
 	font-family: $comment-heading-font-family;
-	font-size: 14px;
-	font-size: 1.4rem;
+	@include font-size(1.4);
 	font-weight: 600;
 }
 
@@ -91,16 +87,14 @@ ol.children { list-style-type: none; }
 }
 
 .comment-reply-title {
-	font-size: 30px;
-	font-size: 3rem;
+	@include font-size(3);
 	font-weight: 900;
 	margin-bottom: .5em;
 }
 
 .comment-form {
 	font-family: $comment-heading-font-family;
-	font-size: 16px;
-	font-size: 1.6rem;
+	@include font-size(1.6);
 	padding-bottom: 4rem;
 	textarea {
 		font-family: $comment-textarea-font-family;

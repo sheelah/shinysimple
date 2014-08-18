@@ -18,8 +18,7 @@ Index and Archive
 }
 
 .continue-reading {
-	font-size: 18px;
-	font-size: 1.8rem;
+	@include font-size(1.8);
 	font-weight: 900;
 	margin: 0 4rem;
 	i {

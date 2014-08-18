@@ -29,8 +29,7 @@ Menus
 	@include single-transition(all, 0.5s);
 	color: #fff;
 	display: block;
-	font-size: 14px;
-	font-size: 1.4rem;
+	@include font-size(1.4);
 	line-height: 1.3em;
 	padding: 1.3em 1em;
 	text-decoration: none;
@@ -114,8 +113,7 @@ Menus
 		height: 3.9em;
 		padding: 0 1em;
 		font-weight: normal;
-		font-size: 14px;
-		font-size: 1.4rem;
+		@include font-size(1.4);
 		text-decoration: none;
 		line-height: 3.75em;
 		color: $nav-li-hover-font-color;
